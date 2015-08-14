@@ -4,6 +4,7 @@
 #include <game.hpp>
 #include <focusMeter.hpp>
 #include <player.hpp>
+#include <artificialPlayer.hpp>
 
 class SinglePlayerGame : public Game{
     public:
@@ -20,7 +21,7 @@ class SinglePlayerGame : public Game{
         int difficulty;
         int winner;
         Player human;
-        Player machine;
+        ArtificialPlayer machine;
 
         FocusMeter focusMeter;
 

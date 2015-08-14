@@ -592,13 +592,14 @@
 	"state.hpp"
 	"game.hpp"
 
-1436730935 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\singleplayergame.cpp
+1439566211 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\singleplayergame.cpp
 	"singlePlayerGame.hpp"
 
-1436671684 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\singleplayergame.hpp
+1439565570 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\singleplayergame.hpp
 	<game.hpp>
 	<focusMeter.hpp>
 	<player.hpp>
+	<artificialPlayer.hpp>
 
 1436671391 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\forcemeter.cpp
 	"forceMeter.hpp"
@@ -607,20 +608,20 @@
 1436397988 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\forcemeter.hpp
 	<SFML/Graphics.hpp>
 
-1436666222 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\player.cpp
+1439565592 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\player.cpp
 	"player.hpp"
 
-1436666560 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\player.hpp
+1439565203 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\player.hpp
 	<string>
 	<SFML/Graphics.hpp>
 
-1436459874 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\artificialplayer.cpp
+1439566319 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\artificialplayer.cpp
 	"artificialPlayer.hpp"
 
-1436467554 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\artificialplayer.hpp
+1439565363 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\artificialplayer.hpp
 	<player.hpp>
 
-1436730973 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\global.hpp
+1439565056 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\global.hpp
 
 1436673284 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\focusmeter.hpp
 	<player.hpp>

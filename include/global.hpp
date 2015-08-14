@@ -5,3 +5,7 @@
 #define GAME_TITLE "Mental War v0.1"
 
 #define FRAMERATE 60
+
+#define MAX_FORCE 100
+
+#define MIN_FORCE 0

@@ -54,15 +54,23 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add option="-DSFML_STATIC" />
+			<Add option="-liconv" />
+		</Linker>
 		<Unit filename="bin/Debug/openal32.dll" />
 		<Unit filename="bin/Debug/thinkgear.dll" />
 		<Unit filename="include/application.hpp" />
 		<Unit filename="include/artificialPlayer.hpp" />
 		<Unit filename="include/button.hpp" />
 		<Unit filename="include/difficultyMenu.hpp" />
+		<Unit filename="include/focusMeter.hpp" />
 		<Unit filename="include/fontsDAO.hpp" />
 		<Unit filename="include/forceMeter.hpp" />
 		<Unit filename="include/game.hpp" />
+		<Unit filename="include/global.hpp" />
 		<Unit filename="include/mainMenu.hpp" />
 		<Unit filename="include/player.hpp" />
 		<Unit filename="include/playing.hpp" />
@@ -73,6 +81,7 @@
 		<Unit filename="src/artificialPlayer.cpp" />
 		<Unit filename="src/button.cpp" />
 		<Unit filename="src/difficultyMenu.cpp" />
+		<Unit filename="src/focusMeter.cpp" />
 		<Unit filename="src/fontsDAO.cpp" />
 		<Unit filename="src/forceMeter.cpp" />
 		<Unit filename="src/game.cpp" />

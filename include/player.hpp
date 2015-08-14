@@ -10,6 +10,7 @@ class Player : public sf::Drawable{
         virtual ~Player();
 
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+        virtual void update();
 
         int getForce();
         void setForce(int force);

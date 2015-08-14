@@ -8,8 +8,11 @@ class ArtificialPlayer : public Player{
     public:
         ArtificialPlayer();
         virtual ~ArtificialPlayer();
-    protected:
+        virtual void update();
+        void setInitialForce(int _force);
     private:
+        int initialForce;
+        sf::Clock changeClock;
 
 
 };

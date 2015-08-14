@@ -32,6 +32,11 @@ void Player::setName(std::string name){
     this->name = name;
 }
 
+void Player::update(){
+
+}
+
+
 void Player::setPosition(sf::Vector2f newPos){
     sprite.setOrigin(p_body.getLocalBounds().width/2, p_body.getLocalBounds().height/2);
     p_body.setOrigin(p_body.getLocalBounds().width/2, p_body.getLocalBounds().height/2);
