@@ -12,7 +12,6 @@ MainMenu::MainMenu(Application* app) :  singlePlayerButton(336, 200, 128, 32, "S
     title.setPosition(312, 100);
     title.setString("Mental War");
 
-    multiPlayerButton.disable();
     optionsButton.disable();
 }
 
@@ -40,7 +39,7 @@ void MainMenu::handleEvent(sf::Event& event){
                 app->pushState(new DifficultyMenu(app));
             }
             else if(multiPlayerButton.clicked(x, y)){
-
+                app->pushState(new TeamsMenu(app));
             }
             else if(optionsButton.clicked(x, y)){
 

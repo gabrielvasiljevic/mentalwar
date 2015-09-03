@@ -8,20 +8,18 @@
 
 class MultiPlayerGame : public Game {
     public:
-        MultiPlayerGame();
-        MultiPlayerGame(int difficulty);
+        MultiPlayerGame(std::vector<Player*> firstTeam, std::vector<Player*> secondTeam);
         virtual ~MultiPlayerGame();
 
         virtual void draw(const float dt);
         virtual void update(const float dt);
         virtual void handleEvent(sf::Event& event);
-    protected:
 
     private:
         int difficulty;
         int winner;
-        std::vector<Player*> leftTeam;
-        std::vector<Player*> rightTeam;
+        PlayerGroup leftTeam;
+        PlayerGroup rightTeam;
 
         virtual void testGameover();
 };

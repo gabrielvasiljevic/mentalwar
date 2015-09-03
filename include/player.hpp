@@ -22,12 +22,14 @@ class Player : public sf::Drawable{
         void setPosition(sf::Vector2f newPos);
         sf::Vector2f getPosition();
 
+        void setColor(sf::Color _color);
+        sf::Color getColor();
+
     protected:
         std::string name;
         int force;
 
-
-
+        sf::Color p_color;
         sf::Sprite sprite;
         sf::RectangleShape p_body;
         sf::Vector2f p_position;

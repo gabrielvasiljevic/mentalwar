@@ -1,11 +1,9 @@
 #include "MultiPlayerGame.hpp"
 
-MultiPlayerGame::MultiPlayerGame(){
-    //ctor
-}
+MultiPlayerGame::MultiPlayerGame(std::vector<Player*> firstTeam,
+                                 std::vector<Player*> secondTeam) : leftTeam(firstTeam),
+                                                                    rightTeam(secondTeam){
 
-MultiPlayerGame::MultiPlayerGame(int difficulty){
-    //ctor
 }
 
 MultiPlayerGame::~MultiPlayerGame(){
@@ -13,11 +11,14 @@ MultiPlayerGame::~MultiPlayerGame(){
 }
 
 void MultiPlayerGame::draw(const float dt){
-
+    app->window.draw(forceMeter);
+    app->window.draw(leftTeam);
+    app->window.draw(rightTeam);
 }
 
 void MultiPlayerGame::update(const float dt){
-
+    leftTeam.update();
+    rightTeam.update();
 }
 
 void MultiPlayerGame::handleEvent(sf::Event& event){
@@ -43,12 +44,12 @@ void MultiPlayerGame::handleEvent(sf::Event& event){
 }
 
 void MultiPlayerGame::testGameover(){
-    if(leftTeam.at(0)->getPosition().x > SCREEN_LENGHT/2){
+    if(leftTeam.getPosition().x > SCREEN_LENGHT/2){
         winner = 0;
         gameover = true;
     }
 
-    if(rightTeam.at(0)->getPosition().x < SCREEN_LENGHT/2){
+    if(rightTeam.getPosition().x < SCREEN_LENGHT/2){
         winner = 1;
         gameover = true;
     }

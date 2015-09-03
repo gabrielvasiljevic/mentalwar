@@ -4,6 +4,7 @@
 #include "state.hpp"
 #include "button.hpp"
 #include "difficultyMenu.hpp"
+#include "TeamsMenu.hpp"
 
 #include <SFML/Graphics.hpp>
 

@@ -7,20 +7,19 @@
 
 class PlayerGroup : public sf::Drawable{
     public:
-        PlayerGroup();
+        PlayerGroup(std::vector<Player*> _players);
         virtual ~PlayerGroup();
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
 
         void addPlayer(Player* player);
-        void update(const float dt);
+        void update();
         void setForce(int playerID, int force);
 
         int getTotalForce();
         std::vector<Player*> getPlayers();
         sf::Vector2f getPosition();
 
-    protected:
     private:
         std::vector<Player*> players;
         FocusMeter focusMeter;
