@@ -623,10 +623,25 @@
 
 1439565056 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\global.hpp
 
-1436673284 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\focusmeter.hpp
+1441265874 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\focusmeter.hpp
 	<player.hpp>
+	<global.hpp>
 	<iostream>
 
-1436673633 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\focusmeter.cpp
+1441265835 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\focusmeter.cpp
 	"focusMeter.hpp"
+
+1441265508 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\multiplayergame.cpp
+	"MultiPlayerGame.hpp"
+
+1441265721 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\multiplayergame.hpp
+	<game.hpp>
+	<player.hpp>
+	<PlayerGroup.hpp>
+	<artificialPlayer.hpp>
+
+1441265727 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\playergroup.hpp
+	<player.hpp>
+	<focusMeter.hpp>
+	<SFML/Graphics.hpp>
 

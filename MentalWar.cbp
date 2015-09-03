@@ -62,6 +62,8 @@
 		</Linker>
 		<Unit filename="bin/Debug/openal32.dll" />
 		<Unit filename="bin/Debug/thinkgear.dll" />
+		<Unit filename="include/MultiPlayerGame.hpp" />
+		<Unit filename="include/PlayerGroup.hpp" />
 		<Unit filename="include/application.hpp" />
 		<Unit filename="include/artificialPlayer.hpp" />
 		<Unit filename="include/button.hpp" />
@@ -77,6 +79,8 @@
 		<Unit filename="include/singlePlayerGame.hpp" />
 		<Unit filename="include/soundsDAO.hpp" />
 		<Unit filename="include/state.hpp" />
+		<Unit filename="src/MultiPlayerGame.cpp" />
+		<Unit filename="src/PlayerGroup.cpp" />
 		<Unit filename="src/application.cpp" />
 		<Unit filename="src/artificialPlayer.cpp" />
 		<Unit filename="src/button.cpp" />

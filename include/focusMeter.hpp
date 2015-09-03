@@ -2,11 +2,12 @@
 #define FOCUSMETER_H
 
 #include <player.hpp>
+#include <global.hpp>
 #include <iostream>
 
 class FocusMeter : public sf::Drawable{
     public:
-        FocusMeter(int posX, int posY, int sizeX, int sizeY);
+        FocusMeter();
 
         void addPlayer(Player* _player);
 

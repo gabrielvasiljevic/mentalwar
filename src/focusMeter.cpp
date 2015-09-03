@@ -1,12 +1,11 @@
 #include "focusMeter.hpp"
 
-FocusMeter::FocusMeter(int posX, int posY, int sizeX, int sizeY) {
-    sf::Vector2f newSize(sizeX, sizeY);
+FocusMeter::FocusMeter() {
+    sf::Vector2f newSize(32, 200);
     m_size = newSize;
     m_body.setSize(m_size);
-    m_body.setPosition(posX, posY);
+    m_body.setPosition(SCREEN_LENGHT*0.02, SCREEN_HEIGHT*0.30);
     m_body.setFillColor(sf::Color::White);
-
 }
 
 void FocusMeter::addPlayer(Player* _player) {

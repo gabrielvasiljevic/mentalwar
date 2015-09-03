@@ -1,6 +1,6 @@
 #include "singlePlayerGame.hpp"
 
-SinglePlayerGame::SinglePlayerGame(int difficulty) : focusMeter(SCREEN_LENGHT*0.02, SCREEN_HEIGHT*0.30, 32, 200){
+SinglePlayerGame::SinglePlayerGame(int difficulty){
     human.setPosition   (sf::Vector2f(SCREEN_LENGHT*0.30, SCREEN_HEIGHT*0.80));
     machine.setPosition (sf::Vector2f(SCREEN_LENGHT*0.70, SCREEN_HEIGHT*0.80));
     machine.setInitialForce( 65 + 10*difficulty );
@@ -22,7 +22,6 @@ void SinglePlayerGame::update(const float dt){
         machine.update();
 
         int resultant = machine.getForce() - human.getForce();
-
 
         sf::Vector2f force(resultant/(SCREEN_LENGHT*0.02), 0);
 
