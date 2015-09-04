@@ -15,14 +15,18 @@ class PlayerGroup : public sf::Drawable{
         void addPlayer(Player* player);
         void update();
         void setForce(int playerID, int force);
+        void setPosition(sf::Vector2f pos);
+        void applyForce(sf::Vector2f _force);
 
         int getTotalForce();
         std::vector<Player*> getPlayers();
         sf::Vector2f getPosition();
 
+        FocusMeter focusMeter;
+
     private:
         std::vector<Player*> players;
-        FocusMeter focusMeter;
+
 };
 
 #endif // PLAYERGROUP_H

@@ -64,6 +64,9 @@
 		<Unit filename="bin/Debug/thinkgear.dll" />
 		<Unit filename="include/MultiPlayerGame.hpp" />
 		<Unit filename="include/PlayerGroup.hpp" />
+		<Unit filename="include/PlayerHolder.hpp" />
+		<Unit filename="include/TeamHolder.hpp" />
+		<Unit filename="include/TeamsMenu.hpp" />
 		<Unit filename="include/application.hpp" />
 		<Unit filename="include/artificialPlayer.hpp" />
 		<Unit filename="include/button.hpp" />
@@ -81,6 +84,9 @@
 		<Unit filename="include/state.hpp" />
 		<Unit filename="src/MultiPlayerGame.cpp" />
 		<Unit filename="src/PlayerGroup.cpp" />
+		<Unit filename="src/PlayerHolder.cpp" />
+		<Unit filename="src/TeamHolder.cpp" />
+		<Unit filename="src/TeamsMenu.cpp" />
 		<Unit filename="src/application.cpp" />
 		<Unit filename="src/artificialPlayer.cpp" />
 		<Unit filename="src/button.cpp" />

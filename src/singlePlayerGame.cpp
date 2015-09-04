@@ -5,6 +5,8 @@ SinglePlayerGame::SinglePlayerGame(int difficulty){
     machine.setPosition (sf::Vector2f(SCREEN_LENGHT*0.70, SCREEN_HEIGHT*0.80));
     machine.setInitialForce( 65 + 10*difficulty );
 
+    focusMeter.setPosition(sf::Vector2f(LFOCUS_METER_POS_X, FOCUS_METER_POS_Y));
+
     focusMeter.addPlayer(&human);
 
     human.setForce(60 + 5*difficulty);

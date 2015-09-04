@@ -422,7 +422,7 @@
 	"application.hpp"
 	"mainMenu.hpp"
 
-1436384803 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\button.cpp
+1441316998 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\button.cpp
 	"button.hpp"
 
 1436384738 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\button.hpp
@@ -593,7 +593,7 @@
 	"state.hpp"
 	"game.hpp"
 
-1441265843 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\singleplayergame.cpp
+1441385127 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\singleplayergame.cpp
 	"singlePlayerGame.hpp"
 
 1439565570 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\singleplayergame.hpp
@@ -609,11 +609,12 @@
 1436397988 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\forcemeter.hpp
 	<SFML/Graphics.hpp>
 
-1439565592 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\player.cpp
+1441372205 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\player.cpp
 	"player.hpp"
 
-1441291661 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\player.hpp
+1441372625 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\player.hpp
 	<string>
+	<global.hpp>
 	<SFML/Graphics.hpp>
 
 1439566319 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\artificialplayer.cpp
@@ -622,17 +623,17 @@
 1439565363 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\artificialplayer.hpp
 	<player.hpp>
 
-1439565056 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\global.hpp
+1441385007 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\global.hpp
 
-1441265874 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\focusmeter.hpp
+1441384460 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\focusmeter.hpp
 	<player.hpp>
 	<global.hpp>
 	<iostream>
 
-1441265835 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\focusmeter.cpp
+1441386742 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\focusmeter.cpp
 	"focusMeter.hpp"
 
-1441293195 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\multiplayergame.cpp
+1441387408 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\multiplayergame.cpp
 	"MultiPlayerGame.hpp"
 
 1441292981 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\multiplayergame.hpp
@@ -641,20 +642,40 @@
 	<PlayerGroup.hpp>
 	<artificialPlayer.hpp>
 
-1441292327 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\playergroup.hpp
+1441384839 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\playergroup.hpp
 	<player.hpp>
 	<focusMeter.hpp>
 	<SFML/Graphics.hpp>
 
-1441293380 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\playergroup.cpp
+1441387607 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\playergroup.cpp
 	"PlayerGroup.hpp"
 
-1441300421 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\teamsmenu.cpp
+1441328651 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\teamsmenu.cpp
 	"TeamsMenu.hpp"
 
-1441300413 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\teamsmenu.hpp
+1441305825 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\teamsmenu.hpp
 	<state.hpp>
 	<playing.hpp>
 	<button.hpp>
+	<TeamHolder.hpp>
 	<MultiPlayerGame.hpp>
+
+1441328286 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\teamholder.hpp
+	<SFML/Graphics.hpp>
+	<PlayerHolder.hpp>
+	<player.hpp>
+	<button.hpp>
+	<global.hpp>
+
+1441328777 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\teamholder.cpp
+	"TeamHolder.hpp"
+
+1441328253 c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\include\playerholder.hpp
+	<SFML/Graphics.hpp>
+	<player.hpp>
+	<button.hpp>
+	<global.hpp>
+
+1441328774 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\playerholder.cpp
+	"PlayerHolder.hpp"
 

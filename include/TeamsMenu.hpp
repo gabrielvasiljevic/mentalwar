@@ -4,6 +4,7 @@
 #include <state.hpp>
 #include <playing.hpp>
 #include <button.hpp>
+#include <TeamHolder.hpp>
 #include <MultiPlayerGame.hpp>
 
 class TeamsMenu : public State{
@@ -19,6 +20,9 @@ class TeamsMenu : public State{
 
         Button backButton;
         Button playButton;
+
+        TeamHolder leftTeam;
+        TeamHolder rightTeam;
 
         sf::Text versusText;
 };

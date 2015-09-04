@@ -1,7 +1,15 @@
 #include "button.hpp"
 
 Button::Button(){
-    //ctor
+
+    selectedSound.setBuffer(soundsDAO.getSound("select"));
+    clickedSound.setBuffer(soundsDAO.getSound("bip"));
+
+    b_text.setFont(fontsDAO.getFont("agency_bold"));
+    b_text.setCharacterSize(20U);
+    b_text.setColor(sf::Color::Black);
+
+    update();
 }
 
 Button::~Button(){

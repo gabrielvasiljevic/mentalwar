@@ -27,6 +27,11 @@ void PlayerGroup::update(){
     for(auto& player: players){
         player->update();
     }
+    focusMeter.update();
+}
+
+void PlayerGroup::applyForce(sf::Vector2f _force){
+    setPosition(getPosition() + _force);
 }
 
 void PlayerGroup::setForce(int playerID, int force){
@@ -53,3 +58,12 @@ std::vector<Player*> PlayerGroup::getPlayers(){
 sf::Vector2f PlayerGroup::getPosition(){
     return players.at(0)->getPosition();
 }
+
+void PlayerGroup::setPosition(sf::Vector2f pos){
+    int n = players.size();
+
+    for(int i = 0; i < n; i++){
+        players.at(i)->setPosition(sf::Vector2f(pos.x - i*PLAYER_SIZE*0.5, pos.y));
+    }
+}
+

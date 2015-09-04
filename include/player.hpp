@@ -2,6 +2,7 @@
 #define PLAYER_H
 
 #include <string>
+#include <global.hpp>
 #include <SFML/Graphics.hpp>
 
 class Player : public sf::Drawable{

@@ -4,7 +4,6 @@ FocusMeter::FocusMeter() {
     sf::Vector2f newSize(32, 200);
     m_size = newSize;
     m_body.setSize(m_size);
-    m_body.setPosition(SCREEN_LENGHT*0.02, SCREEN_HEIGHT*0.30);
     m_body.setFillColor(sf::Color::White);
 }
 
@@ -36,10 +35,15 @@ void FocusMeter::update() {
 
         float newPos = bottom - (m_body.getSize().y*players[i]->getForce())/100.0f;
 
-        meters[i].setPosition(meters[i].getPosition().x, newPos); //Keep the X position, changes only height
+        meters[i].setPosition(m_body.getPosition().x, newPos); //Keep the X position, changes only height
     }
 }
 
 sf::Vector2f FocusMeter::getSize(){
     return m_body.getSize();
+}
+
+void FocusMeter::setPosition(sf::Vector2f pos){
+    m_body.setPosition(pos);
+    update();
 }

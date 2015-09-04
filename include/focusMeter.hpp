@@ -17,6 +17,8 @@ class FocusMeter : public sf::Drawable{
 
         sf::Vector2f getSize();
 
+        void setPosition(sf::Vector2f pos);
+
     private:
         std::vector<Player*> players;
         std::vector<sf::RectangleShape> meters; //trocar para sf::Sprite depois

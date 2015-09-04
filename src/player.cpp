@@ -1,9 +1,9 @@
 #include "player.hpp"
 
 Player::Player(){
-    force = 0;
+    force = 60;
     name = "P";
-    p_body.setSize(sf::Vector2f(64, 128));
+    p_body.setSize(sf::Vector2f(PLAYER_SIZE, PLAYER_SIZE*2));
 }
 
 Player::~Player(){
@@ -21,7 +21,9 @@ void Player::draw(sf::RenderTarget& target, sf::RenderStates states) const{
 
 
 void Player::setForce(int force){
-    this->force = force;
+    if(force <= MAX_FORCE and force >= MIN_FORCE){
+        this->force = force;
+    }
 }
 
 std::string Player::getName(){
