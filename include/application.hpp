@@ -8,8 +8,6 @@
 
 #include "state.hpp"
 #include "global.hpp"
-#include <thinkgear.h>
-
 
 class State;
 

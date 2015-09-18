@@ -3,17 +3,23 @@
 SinglePlayerGame::SinglePlayerGame(int difficulty){
     human.setPosition   (sf::Vector2f(SCREEN_LENGHT*0.30, SCREEN_HEIGHT*0.80));
     machine.setPosition (sf::Vector2f(SCREEN_LENGHT*0.70, SCREEN_HEIGHT*0.80));
-    machine.setInitialForce( 65 + 10*difficulty );
+    machine.setInitialForce( 55 + 10*difficulty );
 
     focusMeter.setPosition(sf::Vector2f(LFOCUS_METER_POS_X, FOCUS_METER_POS_Y));
 
     focusMeter.addPlayer(&human);
 
     human.setForce(60 + 5*difficulty);
+
+    human.setConnectionID(mindwaveModule.connect());
+
+    if(human.getConnectionID() < 0){
+        std::cout << "No connection" << std::endl;
+    }
 }
 
 SinglePlayerGame::~SinglePlayerGame(){
-    //dtor
+    mindwaveModule.disconnect(human.getConnectionID());
 }
 
 void SinglePlayerGame::update(const float dt){
@@ -22,6 +28,15 @@ void SinglePlayerGame::update(const float dt){
         focusMeter.update();
 
         machine.update();
+        if(updateClock.getElapsedTime().asSeconds() > 1){
+            int att = mindwaveModule.getAttention(human.getConnectionID());
+            if(att > 0){
+               human.setForce(att);
+            }
+
+            updateClock.restart();
+        }
+
 
         int resultant = machine.getForce() - human.getForce();
 
@@ -37,6 +52,7 @@ void SinglePlayerGame::update(const float dt){
     }
     else{
         std::cout << "Winner: " << winner << std::endl;
+        mindwaveModule.disconnect(human.getConnectionID());
         app->popState();
     }
 

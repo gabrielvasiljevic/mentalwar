@@ -56,3 +56,19 @@ void Player::applyForce(sf::Vector2f _force){
     setPosition(getPosition() + _force);
 }
 
+void Player::setColor(sf::Color _color){
+    this->p_color = _color;
+}
+
+sf::Color Player::getColor(){
+    return p_color;
+}
+
+void Player::setConnectionID(int ID){
+    this->connectionID = ID;
+}
+
+int Player::getConnectionID(){
+    return connectionID;
+}
+

@@ -3,6 +3,7 @@
 
 #include "application.hpp"
 #include "forceMeter.hpp"
+#include "MindwaveModule.hpp"
 #include <SFML/Graphics.hpp>
 
 class Game{
@@ -28,6 +29,7 @@ class Game{
         sf::Sprite background;
         ForceMeter forceMeter;
         bool gameover = false;
+        sf::Clock updateClock;
 
         virtual void testGameover();
 

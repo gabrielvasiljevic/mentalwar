@@ -26,9 +26,13 @@ class Player : public sf::Drawable{
         void setColor(sf::Color _color);
         sf::Color getColor();
 
+        void setConnectionID(int ID);
+        int getConnectionID();
+
     protected:
         std::string name;
         int force;
+        int connectionID;
 
         sf::Color p_color;
         sf::Sprite sprite;

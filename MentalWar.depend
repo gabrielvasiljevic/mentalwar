@@ -679,3 +679,176 @@
 1441328774 source:c:\users\gabriel\desktop\ciência da computação\projeto de interface\mentalwar\src\playerholder.cpp
 	"PlayerHolder.hpp"
 
+1436661235 source:c:\users\gabriel\desktop\mentalwar\src\application.cpp
+	"application.hpp"
+
+1441842404 c:\users\gabriel\desktop\mentalwar\include\application.hpp
+	<stack>
+	<iostream>
+	<SFML/Graphics.hpp>
+	"state.hpp"
+	"global.hpp"
+
+1436133601 c:\users\gabriel\desktop\mentalwar\include\state.hpp
+	"application.hpp"
+
+1441385007 c:\users\gabriel\desktop\mentalwar\include\global.hpp
+
+1439566319 source:c:\users\gabriel\desktop\mentalwar\src\artificialplayer.cpp
+	"artificialPlayer.hpp"
+
+1439565363 c:\users\gabriel\desktop\mentalwar\include\artificialplayer.hpp
+	<player.hpp>
+
+1442564255 c:\users\gabriel\desktop\mentalwar\include\player.hpp
+	<string>
+	<global.hpp>
+	<SFML/Graphics.hpp>
+
+1441316998 source:c:\users\gabriel\desktop\mentalwar\src\button.cpp
+	"button.hpp"
+
+1436384738 c:\users\gabriel\desktop\mentalwar\include\button.hpp
+	<SFML/Graphics.hpp>
+	"fontsDAO.hpp"
+	"soundsDAO.hpp"
+
+1436145605 c:\users\gabriel\desktop\mentalwar\include\fontsdao.hpp
+	<iostream>
+	<map>
+	<fstream>
+	<SFML/Graphics.hpp>
+
+1436218968 c:\users\gabriel\desktop\mentalwar\include\soundsdao.hpp
+	<iostream>
+	<map>
+	<fstream>
+	<SFML/Audio.hpp>
+
+1436397817 source:c:\users\gabriel\desktop\mentalwar\src\difficultymenu.cpp
+	"difficultyMenu.hpp"
+
+1436371799 c:\users\gabriel\desktop\mentalwar\include\difficultymenu.hpp
+	"state.hpp"
+	"button.hpp"
+	"playing.hpp"
+	"singlePlayerGame.hpp"
+	<SFML/Graphics.hpp>
+
+1436361955 c:\users\gabriel\desktop\mentalwar\include\playing.hpp
+	"state.hpp"
+	"game.hpp"
+
+1442566222 c:\users\gabriel\desktop\mentalwar\include\game.hpp
+	"application.hpp"
+	"forceMeter.hpp"
+	"MindwaveModule.hpp"
+	<SFML/Graphics.hpp>
+
+1436397988 c:\users\gabriel\desktop\mentalwar\include\forcemeter.hpp
+	<SFML/Graphics.hpp>
+
+1439565570 c:\users\gabriel\desktop\mentalwar\include\singleplayergame.hpp
+	<game.hpp>
+	<focusMeter.hpp>
+	<player.hpp>
+	<artificialPlayer.hpp>
+
+1441384460 c:\users\gabriel\desktop\mentalwar\include\focusmeter.hpp
+	<player.hpp>
+	<global.hpp>
+	<iostream>
+
+1441386742 source:c:\users\gabriel\desktop\mentalwar\src\focusmeter.cpp
+	"focusMeter.hpp"
+
+1436146172 source:c:\users\gabriel\desktop\mentalwar\src\fontsdao.cpp
+	"fontsDAO.h"
+
+1436671391 source:c:\users\gabriel\desktop\mentalwar\src\forcemeter.cpp
+	"forceMeter.hpp"
+	<iostream>
+
+1436666661 source:c:\users\gabriel\desktop\mentalwar\src\game.cpp
+	"game.hpp"
+
+1436201361 source:c:\users\gabriel\desktop\mentalwar\src\main.cpp
+	<iostream>
+	"application.hpp"
+	"mainMenu.hpp"
+
+1441300495 c:\users\gabriel\desktop\mentalwar\include\mainmenu.hpp
+	"state.hpp"
+	"button.hpp"
+	"difficultyMenu.hpp"
+	"TeamsMenu.hpp"
+	<SFML/Graphics.hpp>
+
+1441305825 c:\users\gabriel\desktop\mentalwar\include\teamsmenu.hpp
+	<state.hpp>
+	<playing.hpp>
+	<button.hpp>
+	<TeamHolder.hpp>
+	<MultiPlayerGame.hpp>
+
+1441328286 c:\users\gabriel\desktop\mentalwar\include\teamholder.hpp
+	<SFML/Graphics.hpp>
+	<PlayerHolder.hpp>
+	<player.hpp>
+	<button.hpp>
+	<global.hpp>
+
+1441328253 c:\users\gabriel\desktop\mentalwar\include\playerholder.hpp
+	<SFML/Graphics.hpp>
+	<player.hpp>
+	<button.hpp>
+	<global.hpp>
+
+1441292981 c:\users\gabriel\desktop\mentalwar\include\multiplayergame.hpp
+	<game.hpp>
+	<player.hpp>
+	<PlayerGroup.hpp>
+	<artificialPlayer.hpp>
+
+1441384839 c:\users\gabriel\desktop\mentalwar\include\playergroup.hpp
+	<player.hpp>
+	<focusMeter.hpp>
+	<SFML/Graphics.hpp>
+
+1441300486 source:c:\users\gabriel\desktop\mentalwar\src\mainmenu.cpp
+	"mainMenu.hpp"
+
+1441387408 source:c:\users\gabriel\desktop\mentalwar\src\multiplayergame.cpp
+	"MultiPlayerGame.hpp"
+
+1442564303 source:c:\users\gabriel\desktop\mentalwar\src\player.cpp
+	"player.hpp"
+
+1441387607 source:c:\users\gabriel\desktop\mentalwar\src\playergroup.cpp
+	"PlayerGroup.hpp"
+
+1441328774 source:c:\users\gabriel\desktop\mentalwar\src\playerholder.cpp
+	"PlayerHolder.hpp"
+
+1436397940 source:c:\users\gabriel\desktop\mentalwar\src\playing.cpp
+	"playing.hpp"
+
+1442567109 source:c:\users\gabriel\desktop\mentalwar\src\singleplayergame.cpp
+	"singlePlayerGame.hpp"
+
+1436219010 source:c:\users\gabriel\desktop\mentalwar\src\soundsdao.cpp
+	"soundsDAO.h"
+
+1441328777 source:c:\users\gabriel\desktop\mentalwar\src\teamholder.cpp
+	"TeamHolder.hpp"
+
+1441328651 source:c:\users\gabriel\desktop\mentalwar\src\teamsmenu.cpp
+	"TeamsMenu.hpp"
+
+1442566081 c:\users\gabriel\desktop\mentalwar\include\mindwavemodule.hpp
+	<thinkgear.h>
+	<iostream>
+
+1442567394 source:c:\users\gabriel\desktop\mentalwar\src\mindwavemodule.cpp
+	"MindwaveModule.hpp"
+
